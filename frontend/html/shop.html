@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Notebook District</title>
+
+    <!-- Your CSS files -->
+    <link rel="stylesheet" href="/css/shop.css">
+    <link rel="stylesheet" href="/css/contact-modal.css">
+    <link rel="stylesheet" href="/css/login-modal.css">
+</head>
+<body>
+
+    <!-- NAVBAR (unchanged) -->
+    <nav class="navbar">
+        <a href="/html/main.html" class="logo"><img src="/data/logo.png" alt="Notebook District logo"></a>
+
+        <ul class="nav-links">
+            <li><a href="/html/main.html">Home</a></li>
+            <li><a href="/html/about-us.html">About Us</a></li>
+            <li><a href="#" class="btn" data-contact-modal-open onclick="event.preventDefault();">Contact Us</a></li>
+            <li><a href="/html/shop.html">Shop Now!</a></li>
+        </ul>
+
+        <button id="login-open-btn" class="login-btn" type="button">Sign In</button>
+    </nav>
+
+    <!-- =========================================================
+         SHOP PAGE CONTENT
+         ========================================================= -->
+    <main class="shop-page">
+
+        <h1 class="shop-heading">Shop</h1>
+        <p class="shop-subheading">Find the best premium stationery for school, work, and creativity.</p>
+
+        <div class="shop-layout">
+
+            <!-- =====================================================
+                 FILTER PANEL (left)
+                 ===================================================== -->
+            <aside class="shop-filters">
+
+                <div class="filter-header">
+                    <span class="filter-title">Filters</span>
+                    <button class="filter-reset-btn" id="filter-reset">Reset</button>
+                </div>
+
+                <!-- CATEGORY FILTER -->
+                <div class="filter-group">
+                    <div class="filter-label">Category</div>
+
+                    <div class="filter-check-row">
+                        <input type="checkbox" value="notebook" class="filter-category">
+                        <label>Notebooks</label>
+                    </div>
+
+                    <div class="filter-check-row">
+                        <input type="checkbox" value="pen" class="filter-category">
+                        <label>Pens</label>
+                    </div>
+
+                    <div class="filter-check-row">
+                        <input type="checkbox" value="pencil" class="filter-category">
+                        <label>Pencils</label>
+                    </div>
+
+                    <div class="filter-check-row">
+                        <input type="checkbox" value="eraser" class="filter-category">
+                        <label>Erasers</label>
+                    </div>
+
+                    <div class="filter-check-row">
+                        <input type="checkbox" value="ruler" class="filter-category">
+                        <label>Rulers</label>
+                    </div>
+                </div>
+
+                <!-- PRICE FILTER -->
+                <div class="filter-group">
+                    <div class="filter-label">Price Range</div>
+
+                    <div class="filter-price-row">
+                        <input type="number" id="price-min" placeholder="Min">
+                        <input type="number" id="price-max" placeholder="Max">
+                    </div>
+                </div>
+
+                <!-- TAG FILTER (chips auto-filled by JS) -->
+                <div class="filter-group">
+                    <div class="filter-label">Tags</div>
+                    <div id="filter-tags" class="filter-tag-chips"></div>
+                </div>
+
+            </aside>
+
+            <!-- =====================================================
+                 PRODUCTS + SEARCH + SORT (right)
+                 ===================================================== -->
+            <section class="shop-main">
+
+                <!-- SEARCH + SORT -->
+                <div class="shop-toolbar">
+
+                    <div class="shop-search-wrapper">
+                        <input type="search" id="shop-search" class="shop-search-input"
+                               placeholder="Search products...">
+                    </div>
+
+                    <div class="shop-sort-wrapper">
+                        <select id="shop-sort" class="shop-sort-select">
+                            <option value="all">All</option>
+                            <option value="featured">Featured</option>
+                            <option value="in-stock">In Stock Only</option>
+                            <option value="price-asc">Price: Low to High</option>
+                            <option value="price-desc">Price: High to Low</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <!-- PRODUCT GRID -->
+                <div id="shop-products" class="product-grid"></div>
+
+                <!-- Results counter -->
+                <div id="shop-results-meta" class="shop-results-meta"></div>
+
+            </section>
+
+        </div>
+        <div id="product-modal" class="product-modal hidden">
+            <div class="modal-overlay"></div>
+
+            <div class="modal-box">
+                <button class="modal-close" aria-label="Close">×</button>
+
+                <div class="modal-body">
+                    <div class="modal-image">
+                        <img id="modal-img" src="" alt="">
+                    </div>
+                    <div class="modal-info">
+                        <h2 id="modal-name"></h2>
+                        <p id="modal-price" class="modal-price"></p>
+                        <p id="modal-stock" class="modal-stock"></p>
+                        <p id="modal-desc"></p>
+
+                        <div class="modal-actions">
+                            <button id="modal-buy" class="modal-primary-btn" type="button">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- =========================================================
+         MODALS (you already have these)
+         ========================================================= -->
+    <script src="/js/login-modal.js" defer></script>
+    <script src="/js/contact-modal.js" defer></script>
+
+    <!-- SHOP PRODUCT ENGINE -->
+    <script src="/js/shop-products.js" defer></script>
+
+</body>
+</html>

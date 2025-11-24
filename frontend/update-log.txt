@@ -1,0 +1,119 @@
+Update Log 1: 12/11/2025
+- Test navbar at contacts.html
+- Works without design
+- SUCCESS
+
+Update Log 2: 12/11/2025
+- Finished navbar
+- Design finished
+- SUCCESS
+
+Update Log 3: 12/11/2025
+- Test navbar's mobile & sticky at contacts.html
+- Works; Navbar finished
+- SUCCESS
+
+Update Log 4: 12/11/2025
+- Test hero parallax for main.html (landing page)
+- Works; main.html hero finished
+- SUCCESS
+
+Update Log 5: 12/11/2025
+- Test carousel for main.html (landing page)
+- Added images
+- SUCCESS
+
+Update Log 6: 12/11/2025
+- Test carousel for main.html (landing page)
+- Found a bug: glitches out when clicked too fast
+- Solution: Autoplay + user interaction
+
+Update Log 7: 13/11/2025
+- Test carousel for main.html (landing page) 2
+- Found a bug: isn't smooth
+- Solution: Change to using "requestAnimationFrame"
+
+Update Log 8: 13/11/2025
+- Test carousel for main.html (landing page) 3
+- Found a bug: it only changes when swapping tabs.
+- Solution: Simplify JS
+
+Update Log 9: 13/11/2025
+- Test carousel for main.html (landing page) 4
+- Found a bug: still isn't smooth; skip for now
+- HALF-SUCCESS
+
+Update Log 10: 13/11/2025
+- Created Why-Us section in main.html (landing page)
+- Design finished, needs to be checked again.
+- SUCCESS
+
+Update Log 11: 13/11/2025
+- Updated Why-Us section design in main.html (landing page)
+- Design now has a much subtle colour.
+- SUCCESS
+
+Update Log 12: 13/11/2025
+- Created a better Contact system
+- Currently in testing, found problem in CSS.
+- Solution: Create a global CSS.
+
+Update Log 13: 13/11/2025
+- Finished testing Contact system
+- Must implement to other pages.
+- SUCCESS
+
+Update Log 14: 13/11/2025
+- Updated carousel for main.html (landing page)
+- Added hover; Found a bug: still isn't smooth; skip again for now
+- HALF-SUCCESS
+
+Updated Log 15: 13/11/2025
+- Updated intermission between hero and Why-Us section in main.html (landing page)
+- Added gradient overlay
+- SUCCESS
+
+Update Log 16: 14/11/2025
+- Created clickable cards modal for carousel in main.html (landing page)
+- Works but not the way it was implemented as
+- HALF-SUCCESS
+
+Update Log 17: 14/11/2025
+- Updated clickable cards modal for carousel in main.html (landing page)
+- Works as expected
+- SUCCESS
+
+Update Log 18: 14/11/2025
+- Created login modal 
+- Problem: Still has problems between backend-frontend
+- FIXED / HALF-SUCCESS
+
+Update Log 19: 15/11/2025
+- Fixed login modal 
+- Added user save 
+- SUCCESS
+
+Update Log 20: 15/11/2025
+- Created dark mode
+- Problem: CSS styling still isn't efficient
+- Solution: Reprogram CSS.
+
+Update Log 21: 15/11/2025
+- Fixed dark mode 
+- Styling fits dark mode 
+- SUCCESS
+
+Update Log 22: 19/11/2025
+- Updated carousel and product modal
+- JS grabs from JSON
+- SUCCESS 
+
+Update Log 23: 19/11/2025
+- Created shop.html
+- JS grabs from JSON, everything works fine, just need to add images
+- SUCCESS
+
+Update Log 24: 23/11/2025
+- Finished about-us.html 
+- Finished everything.
+- SUCCESS

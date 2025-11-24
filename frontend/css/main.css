@@ -1,0 +1,601 @@
+body {
+  margin: 0;
+  font-family: Verdana, sans-serif;
+  background-color: #ffffff;
+}
+
+/* Global dark mode base */
+body.dark-mode {
+  background-color: #020617;
+  color: #f5f5f5;
+}
+
+:root {
+  --overlay: rgba(0,0,0,.45);
+  --accent: #ff914d;
+  --pad: clamp(1rem, 4vw, 6rem);
+}
+
+* { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; }
+
+/* =========================================
+   NAVBAR
+   ========================================= */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 950;
+  width: 100%;
+  background-color: #4353ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 2rem;
+  box-sizing: border-box;
+  flex-wrap: nowrap;
+}
+
+.logo img {
+  height: 8vh;
+  max-height: 70px;
+  width: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2.5vw;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2vw;
+}
+
+.nav-links a:hover {
+  color: #ff914d;
+}
+
+.login-btn {
+  background-color: #ff914d;
+  border: none;
+  border-radius: 999px;
+  padding: 0.5rem 1.4rem;
+  font-size: 1.1vw;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #ff7a1f;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 0.4rem 0.8rem;
+  }
+
+  .logo img {
+    height: 6vh;
+    max-height: 55px;
+  }
+
+  .nav-links {
+    gap: 4vw;
+  }
+
+  .nav-links a {
+    font-size: 3vw;
+  }
+
+  .login-btn {
+    padding: 0.35rem 0.9rem;
+    font-size: 2.8vw;
+  }
+}
+
+/* Dark mode: navbar text becomes bright blue on dark bar */
+body.dark-mode nav a,
+body.dark-mode .navbar a,
+body.dark-mode nav li a {
+  color: #4353ff !important;
+}
+
+/* =========================================
+   HERO - PARALLAX
+   ========================================= */
+#hero {
+  min-height: 90vh;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: clip;
+  background: url("/data/background-image-main.jpeg") center / cover no-repeat fixed;  /* Decorative background image */
+}
+
+#hero::before {
+  content: "";
+  position: absolute; inset: 0;
+  background: var(--overlay);
+}
+
+#hero::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 120px; /* adjust fade height as needed */
+
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0) 0%,
+        rgba(255,145,77,0.8) 60%, /* delete for modern feel */ 
+        #ff914d 100% /* can be changed into rgba(0,0,0,0.30) for modern feel */
+    );
+
+    pointer-events: none;
+}
+
+#hero__inner {
+  position: relative;
+  width: min(1100px, 100%);
+  padding: var(--pad);
+}
+
+#hero h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 800;
+  margin: 0 0 .4rem 0;
+  line-height: 1.05;
+  letter-spacing: .2px;
+  background: linear-gradient(
+    90deg,
+    #4353ff 0%,
+    #4353ff 20%,
+    #ff914d 50%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+#hero p {
+  margin: 0;
+  font-size: clamp(1rem, 2.2vw, 1.25rem);
+  max-width: 60ch;
+  opacity: .95;
+  color: white;
+}
+
+#hero__cta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .8rem 1.2rem;
+  background: var(--accent);
+  color: #1a1a1a;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  #hero { background-attachment: scroll; } /* In Case of iOS/Safari that ignores bg-attach: fixed, swap to scroll. */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #hero { background-attachment: scroll; } /* In Case of User Preference) */
+}
+
+/* =========================================
+   WHY US
+   ========================================= */
+#why-us {
+  position: relative;
+  padding: 2rem clamp(16px, 4vw, 32px);
+  background: #ff914d;
+  color: #4353ff;
+}
+
+/* #why-us::before { // (Only used for "modern" feel) 
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 90px;
+  pointer-events: none;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.3),
+    rgba(0,0,0,0)
+  );
+} */
+
+#why-us::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 90px; /* adjust height for taste */
+
+  background: linear-gradient(
+    to bottom,
+    rgba(255,145,77,1) 0%,
+    rgba(255,145,77,0.4) 55%,
+    #fff 100%
+  );
+
+  pointer-events: none;
+}
+
+#why-us .header h2 {
+  color: #fff;
+}
+
+.header { display:flex; align-items:center; justify-content:space-between; }
+
+#why-us ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+
+#why-us li {
+  margin-bottom: 0.8rem;
+  color: #fff;
+}
+
+#why-us li::marker { /* Visible Bullet Marker */
+  color: #4353ff;
+  font-size: 1.1em;
+}
+
+.center-focus {
+  text-align: center;
+}
+
+#why-us h3 {
+  color: #1a1a1a;
+  font-size:150%;
+}
+
+/* =========================================
+   DARK MODE — WHY US SECTION
+   ========================================= */
+
+/* Make all Why-Us text black in dark mode */
+body.dark-mode #why-us {
+  color: #111;
+}
+
+body.dark-mode #why-us .header h2,
+body.dark-mode #why-us li,
+body.dark-mode #why-us h3 {
+  color: #111;
+}
+
+/* Bullet color (optional — stays blue) */
+body.dark-mode #why-us li::marker {
+  color: #4353ff;
+}
+
+/* Replace the white fade with a fade into dark background */
+body.dark-mode #why-us::after {
+  background: linear-gradient(
+    to bottom,
+    rgba(255,145,77,1) 0%,
+    rgba(255,145,77,0.4) 55%,
+    #020617 100%   /* the new dark-mode fade destination */
+  );
+}
+
+
+/* =========================================
+   FEATURED / CAROUSEL
+   ========================================= */
+.header h2 { 
+  margin: 0 0 .5rem 0; 
+}
+
+#featured-products {
+  padding: 2rem clamp(16px, 4vw, 32px);
+  background: #fff;
+  color: #111;
+}
+
+/* Dark Mode: Featured Products section & cards */
+body.dark-mode #featured-products {
+  background-color: #020617;
+  color: #e5e7eb;
+}
+
+body.dark-mode #featured-products h2 {
+  color: #f9fafb;
+}
+
+/* Carousel wrap stays transparent; background comes from section */
+.carousel-wrap {
+  position: relative;
+}
+
+/* FADE */
+.carousel-wrap::before,
+.carousel-wrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 60px; 
+  pointer-events: none; 
+  z-index: 2;
+}
+
+/* Left gradient fade */
+.carousel-wrap::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    #ffffff 0%,
+    rgba(255,255,255,0) 100%
+  );
+}
+
+/* Right gradient fade */
+.carousel-wrap::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    #ffffff 0%,
+    rgba(255,255,255,0) 100%
+  );
+}
+
+/* In dark mode, fades should blend with dark background */
+body.dark-mode .carousel-wrap::before {
+  background: linear-gradient(
+    to right,
+    #020617 0%,
+    rgba(2,6,23,0) 100%
+  );
+}
+
+body.dark-mode .carousel-wrap::after {
+  background: linear-gradient(
+    to left,
+    #020617 0%,
+    rgba(2,6,23,0) 100%
+  );
+}
+
+/* Carousel core */
+#carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  padding: 1rem 0;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Old Edge */
+}
+#carousel::-webkit-scrollbar { display: none; height: 8px; } /* Chrome/Safari */
+
+#carousel::-webkit-scrollbar-thumb { 
+  background: rgba(0,0,0,0.2); 
+  border-radius: 999px; 
+}
+
+/* Individual product cards */
+.card {
+  flex: 0 0 auto;
+  width: 220px;
+  scroll-snap-align: start;
+  background: #fff;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  padding: 0 0 .75rem 0;
+
+  transition: 
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.035);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+  z-index: 4; /* Hover above rest */
+}
+
+.card h3 {
+  margin: .6rem .75rem 0;
+  font-size: 1rem;
+  color: #222;
+  font-weight: 800;
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px 12px 0 0;
+  background: #f4f4f4;
+  font-size: 0; 
+}
+
+.card img.broken {
+  background: linear-gradient(135deg, #f1f1f1, #e8e8e8);
+}
+
+/* Dark Mode: cards */
+body.dark-mode .card {
+  background-color: #020617;
+  color: #e5e7eb;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.45);
+}
+
+body.dark-mode .card h3 {
+  color: #60a5ff;
+}
+
+/* Arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px; 
+  height: 40px;
+  border: 0; 
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 1;
+  display: grid; 
+  place-items: center;
+  z-index: 3; /* Arrow above the fade */
+}
+
+.arrow.prev { left: -6px; }
+.arrow.next { right: -6px; }
+.arrow:hover { background:#f6f6f6; }
+
+/* Arrows in dark mode */
+body.dark-mode .arrow {
+  background: #0b1120;
+  color: #e5e7eb;
+  box-shadow: 0 8px 20px rgba(0,0,0,.6);
+}
+
+body.dark-mode .arrow:hover {
+  background: #111827;
+}
+
+@media (max-width: 520px){
+  .card { width: 72vw; }
+  .arrow.prev { left: 4px; }
+  .arrow.next { right: 4px; }
+}
+
+/* =========================================
+   CAROUSEL CLICK MODAL (PRODUCT DETAIL)
+   ========================================= */
+#product-modal {
+  position: fixed;
+  inset: 0;                      /* full viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 900;                  /* nav is 950, so nav stays clickable */
+  font-family: Verdana, sans-serif;
+  background: transparent;       /* no big white column */
+}
+
+#product-modal.hidden {
+  display: none;
+}
+
+/* Dark overlay (clicking it will close) */
+#product-modal .modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 0;
+}
+
+/* Softer overlay in dark mode so page isn't fully black */
+body.dark-mode #product-modal .modal-overlay {
+  background: rgba(0,0,0,0.35);
+}
+
+/* The actual modal card */
+#product-modal .modal-box {
+  position: relative;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+  max-width: 700px;
+  width: min(90vw, 700px);
+  padding: 1.5rem;
+  z-index: 1;                    /* above overlay, below nav */
+}
+
+/* Close button */
+#product-modal .modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Layout inside modal: IMAGE LEFT, TEXT RIGHT */
+#product-modal .modal-body {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+#product-modal .modal-image {
+  flex: 1 1 260px;               /* image column */
+}
+
+#product-modal .modal-image img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+#product-modal .modal-info {
+  flex: 1 1 220px;               /* text column */
+}
+
+#product-modal .modal-info h2 {
+  margin: 0 0 0.5rem 0;
+}
+
+#product-modal .modal-price {
+  margin: 0 0 0.75rem 0;
+  font-weight: 700;
+  color: #4353ff;
+}
+
+/* Dark Mode: product detail modal */
+body.dark-mode #product-modal .modal-box {
+  background-color: #020617;
+  color: #e5e7eb;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.8);
+}
+
+body.dark-mode #product-modal h1,
+body.dark-mode #product-modal h2,
+body.dark-mode #product-modal h3 {
+  color: #60a5ff;
+}
+
+body.dark-mode #product-modal .modal-price {
+  color: #60a5ff;
+}
+
+@media (max-width: 600px) {
+  #product-modal .modal-box {
+    padding: 1rem;
+  }
+  #product-modal .modal-body {
+    flex-direction: column;      /* stack image above text on small screens */
+  }
+}

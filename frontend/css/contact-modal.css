@@ -1,0 +1,108 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-overlay.show {
+  display: flex;
+}
+
+/* The modal card */
+.modal {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem;
+  width: 95%;
+  max-width: 420px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  position: relative;
+  font-family: Verdana, sans-serif;
+}
+
+/* Header */
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.modal-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.modal-close {
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+}
+
+/* Contact items */
+.contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.contact-item-label {
+  font-weight: bold;
+  margin-bottom: 0.1rem;
+}
+
+.contact-item-value a {
+  color: #ff914d;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.contact-item-value a:hover {
+  text-decoration: underline;
+}
+
+/* ============================================
+   DARK MODE — CORRECTED VERSION
+   ============================================ */
+
+/* Dark overlay softer (to match product modal) */
+body.dark-mode .modal-overlay {
+  background: rgba(0,0,0,0.35);
+}
+
+/* Modal card turns dark */
+body.dark-mode .modal-overlay .modal {
+  background-color: #020617 !important;
+  color: #e5e7eb !important;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.8);
+}
+
+/* Title in bright blue */
+body.dark-mode .modal-title {
+  color: #60a5ff !important;
+}
+
+/* Contact text */
+body.dark-mode .contact-item-label {
+  color: #e5e7eb !important;
+}
+
+/* Links bright orange */
+body.dark-mode .contact-item-value a {
+  color: #fb923c !important;
+}
+
+/* Close button white */
+body.dark-mode .modal-close {
+  color: white !important;
+}

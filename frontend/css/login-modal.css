@@ -1,0 +1,392 @@
+/****************************************
+ * NOTEBOOKDISTRICT - LOGIN MODAL CSS
+ * Clean, complete, modern, matching brand
+ ****************************************/
+
+/* ==== Backdrop / Overlay ==== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);     /* darker black flair */
+  backdrop-filter: blur(2px);          /* subtle blur */
+  display: none;
+  z-index: 900;
+  transition: opacity 0.25s ease;
+}
+
+/* ==== Modal Base ==== */
+#login-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(420px, 92vw);
+
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px 28px;
+
+  display: none;
+  z-index: 1000;
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+  animation: modalFade 0.25s ease;
+}
+
+/* Fade-in animation */
+@keyframes modalFade {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -47%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* ==== Modal Inner Layout ==== */
+#login-modal .modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+}
+
+/* ==== Close Button (X) ==== */
+#login-modal .close-modal-btn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 0;
+
+  color: white;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #ff7a00, #0051ff);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.15s ease;
+}
+
+#login-modal .close-modal-btn:hover {
+  transform: scale(1.1);
+}
+
+/* ==== Titles ==== */
+#login-modal h2,
+#login-modal h3 {
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #0051ff;     /* brand blue */
+}
+
+/* ==== Labels ==== */
+#login-modal label {
+  font-size: 0.9rem;
+  font-family: Verdana, sans-serif;
+  color: #333;
+}
+
+/* ==== Inputs ==== */
+#login-modal input {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 4px;
+
+  border-radius: 6px;
+  border: 1px solid #ccc;
+
+  font-size: 0.95rem;
+  font-family: Verdana, sans-serif;
+
+  transition: 0.2s ease;
+}
+
+#login-modal input:focus {
+  outline: none;
+  border-color: #ff7a00;      /* brand orange */
+  box-shadow: 0 0 4px rgba(255, 122, 0, 0.3);
+}
+
+/* ==== Submit Buttons ==== */
+#login-modal button[type="submit"] {
+  width: fit-content;
+  padding: 8px 16px;
+
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: white;
+  font-family: Verdana, sans-serif;
+
+  background: linear-gradient(135deg, #ff7a00, #0051ff);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+#login-modal button[type="submit"]:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+/* ==== Message Texts ==== */
+.modal-message {
+  min-height: 1.1em;
+  font-size: 0.9rem;
+  color: #444;
+  margin-top: -6px;
+}
+
+/* ==== HR Style ==== */
+#login-modal hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 1.2rem 0 0.8rem;
+}
+
+/* ===== USER DROPDOWN IN NAVBAR ===== */
+
+.user-menu-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.user-menu {
+  position: absolute;
+  right: 0;
+  top: 110%;
+  min-width: 140px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 6px 0;
+  display: none;
+  z-index: 1100;
+}
+
+.user-menu.open {
+  display: block;
+}
+
+.user-menu button {
+  width: 100%;
+  padding: 8px 12px;
+  text-align: left;
+  background: none;
+  border: none;
+  font-family: Verdana, sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.user-menu button:hover {
+  background: rgba(0, 81, 255, 0.06); /* soft blue hover */
+}
+
+/* ===== SETTINGS MODAL ===== */
+
+#settings-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(360px, 92vw);
+
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px 22px;
+
+  display: none;
+  z-index: 1000;
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+}
+
+#settings-modal .modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#settings-modal h2 {
+  font-family: Verdana, sans-serif;
+  font-size: 1.3rem;
+  color: #0051ff;
+  margin-bottom: 8px;
+}
+
+.settings-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-family: Verdana, sans-serif;
+  font-size: 0.95rem;
+}
+
+/* Close button reused style */
+#settings-modal .close-modal-btn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff7a00, #0051ff);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== Toggle switch ===== */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch .slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: #ddd;
+  border-radius: 999px;
+  transition: 0.2s;
+}
+
+.switch .slider::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  top: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.2s;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.switch input:checked + .slider {
+  background: linear-gradient(135deg, #ff7a00, #0051ff);
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(22px);
+}
+
+/* ===== USER DROPDOWN IN NAVBAR ===== */
+
+.user-menu-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.user-menu {
+  position: absolute;
+  right: 0;
+  top: 110%;
+  min-width: 140px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 6px 0;
+  display: none;
+  z-index: 1100;
+}
+
+.user-menu.open {
+  display: block;
+}
+
+.user-menu button {
+  width: 100%;
+  padding: 8px 12px;
+  text-align: left;
+  background: none;
+  border: none;
+  font-family: Verdana, sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.user-menu button:hover {
+  background: rgba(0, 81, 255, 0.06);
+}
+
+/* ===== SIMPLE DARK MODE OVERRIDES ===== */
+
+body.dark-mode {
+  background-color: #111827;
+  color: #f5f5f5;
+}
+
+/* Navbar (adjust selector if yours is different) */
+body.dark-mode .navbar,
+body.dark-mode nav {
+  background-color: #020617;
+}
+
+/* Hero background overlay area */
+body.dark-mode .hero,
+body.dark-mode .hero-section {
+  background-color: #111827;
+}
+
+/* Cards / sections */
+body.dark-mode .card,
+body.dark-mode .product-card,
+body.dark-mode .why-us-section,
+body.dark-mode .feature-section {
+  background-color: #1f2937;
+  color: #f5f5f5;
+}
+
+/* Modals in dark mode */
+body.dark-mode #login-modal,
+body.dark-mode #settings-modal {
+  background-color: #111827;
+  color: #f5f5f5;
+}
+
+body.dark-mode #login-modal input,
+body.dark-mode #settings-modal input {
+  background-color: #0b1120;
+  border-color: #4b5563;
+  color: #f5f5f5;
+}
+
+body.dark-mode .modal-overlay {
+  background: rgba(0, 0, 0, 0.35);
+}

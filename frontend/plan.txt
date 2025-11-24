@@ -1,0 +1,3 @@
+main.html: Contains only a hero with text and button.
+shop.html: Contains a filter place and a div content where JS will turn data/products.json into product boxes.
+about-us.html: Contains a hero with text and images.

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Notebook District</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/contact-modal.css">
+    <link rel="stylesheet" href="/css/login-modal.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/html/main.html" class="logo"><img src="/data/logo.png" alt="Notebook District logo"></a>
+
+        <ul class="nav-links">
+            <li><a href="/html/main.html">Home</a></li>
+            <li><a href="/html/about-us.html">About Us</a></li>
+            <li><a href="#" class="btn" data-contact-modal-open onclick="event.preventDefault();">Contact Us</a></li>
+            <li><a href="/html/shop.html">Shop Now!</a></li>
+        </ul>
+
+        <button id="login-open-btn" class="login-btn" type="button">Sign In</button>
+    </nav>
+
+    <div id="hero" aria-label="Notebook District Hero">
+        <div id="hero__inner">
+            <h1>Notebook District</h1>
+            <p>Your accessible online shop for study supplies which are crafted for comfort, durability, and daily focus.</p>
+            <a id="hero__cta" href="/html/shop.html">Shop Now</a>
+        </div>
+    </div>
+
+    <div id="why-us">
+        <div class="header">
+            <h2>Why Us?</h2>
+        </div>
+        
+        <div class="content">
+            <ul>
+                <li>Numerous high-quality products for "Back to School" seasons</li>
+                <li>A students' initiative site: We come from students, we are for students</li>
+                <li>Relatively cheap prices like no other</li>
+            </ul>
+            <h3 class="center-focus">Check Out Our Online Store For More!</h3>
+        </div>
+    </div>
+
+    <div id="featured-products">
+        <div class="header">
+            <h2>Featured Products</h2>
+        </div>
+
+        <div class="carousel-wrap">
+            <button class="arrow prev" aria-label="Previous">‹</button>
+
+            <div id="carousel"></div>
+
+        <button class="arrow next" aria-label="Next">›</button>
+
+        </div>
+    </div>
+
+    <div id="product-modal" class="product-modal hidden">
+        <div class="modal-overlay"></div>
+
+        <div class="modal-box">
+            <button class="modal-close" aria-label="Close">×</button>
+
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modal-img" src="" alt="">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-name"></h2>
+                    <p id="modal-price" class="modal-price"></p>
+                    <p id="modal-desc"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="/js/login-modal.js" defer></script>
+<script src="/js/contact-modal.js" defer></script>
+<script src="/js/main.js" defer></script>
+</body>
+</html>

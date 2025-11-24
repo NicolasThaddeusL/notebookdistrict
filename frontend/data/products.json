@@ -1,0 +1,261 @@
+[
+  {
+    "id": "premium-notebook-1",
+    "name": "Premium Notebook 1",
+    "price": 50000,
+    "shortDesc": "High quality paper for a high quality book. Soft to the touch, perfect for daily writing.",
+    "longDesc": "Premium Notebook 1 uses smooth, high-quality paper designed for a comfortable, everyday writing experience. The paper's surface resists ink bleed, making it suitable for gel pens, ballpoint pens, and fineliners. With its practical size and elegant design, this notebook is ideal for school notes, journaling, or daily planning.",
+    "image": "/data/premium-notebook-1.jpg",
+    "category": "notebook",
+    "tags": ["Notebook", "Premium", "A5", "Smooth Paper", "Daily Use", "Journaling", "Student"],
+    "featured": true,
+    "stock": 10
+  },
+
+  {
+    "id": "premium-notebook-2",
+    "name": "Premium Notebook 2",
+    "price": 100000,
+    "shortDesc": "Smooth paper designed purely for comfort in writing. Includes special paper compatible with drawing devices.",
+    "longDesc": "The Premium Notebook 2 features ultra-smooth paper specifically designed for long-lasting writing comfort. Each page is crafted for a smooth, drag-free pen glide, making it perfect for quick writing, drawing, and jotting down ideas. Some paper variants are also compatible with select drawing devices, making it an ideal choice for active creators and students.",
+    "image": "/data/premium-notebook-2.jpg",
+    "category": "notebook",
+    "tags": ["Notebook", "Premium", "A5", "Ultra Smooth", "Creative", "Sketching", "Device-Compatible"],
+    "featured": true,
+    "stock": 50
+  },
+
+  {
+    "id": "premium-pen-1",
+    "name": "Premium Pen 1",
+    "price": 30000,
+    "shortDesc": "Fountain-style pen with smooth gel ink that glides effortlessly across paper.",
+    "longDesc": "The Premium Pen 1 is a fountain pen that combines elegant design with ultra-smooth gel ink. It offers a steady, break-resistant ink flow and produces crisp lines on a variety of paper types. The ergonomically designed grip provides comfort during long writing sessions, making it perfect for students, professionals, and stationery enthusiasts alike.",
+    "image": "/data/premium-pen-1.jpg",
+    "category": "pen",
+    "tags": ["Pen", "Premium", "Gel Ink", "Smooth Writing", "Ergonomic", "Fountain Style", "Long Writing"],
+    "featured": true,
+    "stock": 80
+  },
+
+  {
+    "id": "premium-pen-2",
+    "name": "Premium Pen 2",
+    "price": 20000,
+    "shortDesc": "Ergonomic pen with an aesthetic ballpoint design, built for comfort and style.",
+    "longDesc": "The Premium Pen 2 prioritizes comfort and aesthetics. With a sleek, modern ballpoint design, this pen feels lightweight yet remains stable in use. The fast-drying, oil-based ink helps reduce the risk of smudging, while the soft grip reduces finger fatigue. It's perfect for daily note-taking, signing, and classroom use.",
+    "image": "/data/premium-pen-2.jpg",
+    "category": "pen",
+    "tags": ["Pen", "Premium", "Ballpoint", "Oil-Based Ink", "Comfort Grip", "Student", "Daily Use"],
+    "featured": true,
+    "stock": 89
+  },
+
+  {
+    "id": "premium-pencil-1",
+    "name": "Premium Pencil 1",
+    "price": 15000,
+    "shortDesc": "Premium graphite pencil for smooth, controlled writing and sketching.",
+    "longDesc": "The Premium Pencil 1 uses a high-quality graphite core that delivers smooth, consistent strokes. It's ideal for writing, light drawing, and concept sketching. The wood wrap is easy to sharpen and won't break easily, making it a reliable choice for students and creators who need a versatile pencil.",
+    "image": "/data/premium-pencil-1.jpg",
+    "category": "pencil",
+    "tags": ["Pencil", "Premium", "Graphite", "Smooth Writing", "Sketching", "Easy Sharpen"],
+    "featured": true,
+    "stock": 0
+  },
+
+  {
+    "id": "premium-pencil-2",
+    "name": "Premium Pencil 2",
+    "price": 18000,
+    "shortDesc": "High-precision pencil ideal for exams, diagrams, and detailed notes.",
+    "longDesc": "The Premium Pencil 2 is designed for high-precision technical writing and drawing. Its graphite produces sharp, easily controlled lines, making it ideal for exams, mathematical diagrams, graphs, and detailed notes. The pencil's balanced structure makes it comfortable to use for extended periods without tiring your hand.",
+    "image": "/data/premium-pencil-2.jpeg",
+    "category": "pencil",
+    "tags": ["Pencil", "Premium", "Precision", "Exam", "Technical Drawing", "Mathematics"],
+    "featured": true,
+    "stock": 103
+  },
+
+  {
+    "id": "premium-eraser-1",
+    "name": "Premium Eraser 1",
+    "price": 10000,
+    "shortDesc": "Soft, dust-free eraser that cleans graphite without damaging paper.",
+    "longDesc": "Premium Eraser 1 uses high-quality, soft material that can cleanly erase graphite without damaging the paper texture. Its dust-free formula helps reduce annoying debris when erasing, keeping your desk neater. Ideal for students, illustrators, and anyone who frequently makes corrections to handwriting or sketches.",
+    "image": "/data/premium-eraser-1.jpeg",
+    "category": "eraser",
+    "tags": ["Eraser", "Soft", "Dust-Free", "Clean Erasing", "Non-Damaging", "Sketching"],
+    "featured": true,
+    "stock": 68
+  },
+
+  {
+    "id": "premium-eraser-2",
+    "name": "Premium Eraser 2",
+    "price": 12000,
+    "shortDesc": "High-precision eraser ideal for detailed corrections and sketching.",
+    "longDesc": "The Premium Eraser 2 is designed for precise detail removal. Its ergonomic shape and sharper edges make it easy to erase small areas of images or text without disturbing the surrounding area. It's suitable for sketching, architecture, and work requiring fine corrections.",
+    "image": "/data/premium-eraser-2.jpg",
+    "category": "eraser",
+    "tags": ["Eraser", "Precision", "Detail Work", "Sketching", "Art", "Architecture"],
+    "featured": true,
+    "stock": 32
+  },
+
+  {
+    "id": "premium-ruler-1",
+    "name": "Premium Ruler 1",
+    "price": 20000,
+    "shortDesc": "Transparent acrylic ruler with clear markings for accurate measuring.",
+    "longDesc": "The Premium Ruler 1 is made of high-quality, transparent acrylic, making it easy to see the paper underneath when measuring or drawing lines. The precision-printed, fade-resistant scale ensures consistent accuracy. Perfect for math, design, and everyday school use.",
+    "image": "/data/premium-ruler-1.jpg",
+    "category": "ruler",
+    "tags": ["Ruler", "Acrylic", "Transparent", "Clear Marks", "Math", "School"],
+    "featured": true,
+    "stock": 48
+  },
+
+  {
+    "id": "premium-ruler-2",
+    "name": "Premium Ruler 2",
+    "price": 22000,
+    "shortDesc": "Durable stainless steel ruler, perfect for straight cuts and technical work.",
+    "longDesc": "The Premium Ruler 2 is made of sturdy and durable stainless steel. Its body resists warping, making it highly reliable for creating precise straight lines or as a guide when cutting paper with a cutter. The measurement markings are laser-engraved, ensuring clarity even after frequent use.",
+    "image": "/data/premium-ruler-2.avif",
+    "category": "ruler",
+    "tags": ["Ruler", "Stainless Steel", "Laser Etched", "Technical", "Cutting Guide", "Durable"],
+    "featured": true,
+    "stock": 39
+  },
+  
+  {
+    "id": "premium-notebook-3",
+    "name": "Premium Notebook 3",
+    "price": 85000,
+    "shortDesc": "Hardcover notebook with bleed-resistant paper.",
+    "longDesc": "Premium Notebook 3 features a sturdy hardcover build combined with bleed-resistant, smooth paper ideal for journaling, note-taking, and sketching. Each page is crafted for durability and a premium writing feel.",
+    "image": "/data/premium-notebook-3.jpeg",
+    "category": "notebook",
+    "tags": ["Notebook", "Hardcover", "Premium", "Bleed-Resistant", "Journaling"],
+    "featured": false,
+    "stock": 72
+  },
+
+  {
+    "id": "premium-notebook-4",
+    "name": "Premium Notebook 4",
+    "price": 60000,
+    "shortDesc": "Softcover notebook with extra-wide ruling.",
+    "longDesc": "Premium Notebook 4 offers a flexible softcover paired with wide-ruled pages. Perfect for students and professionals who prefer more spacious writing lines.",
+    "image": "/data/premium-notebook-4.jpeg",
+    "category": "notebook",
+    "tags": ["Notebook", "Softcover", "Wide Ruled", "Premium", "School"],
+    "featured": false,
+    "stock": 54
+  },
+
+  {
+    "id": "premium-pen-3",
+    "name": "Premium Pen 3",
+    "price": 25000,
+    "shortDesc": "Metal-bodied pen with smooth-flow ink.",
+    "longDesc": "Premium Pen 3 comes with a durable metal body and smooth-flow ink technology for an effortless writing experience. Ideal for signatures and daily tasks.",
+    "image": "/data/premium-pen-3.jpeg",
+    "category": "pen",
+    "tags": ["Pen", "Metal Body", "Smooth Flow", "Premium", "Daily Use"],
+    "featured": false,
+    "stock": 41
+  },
+
+  {
+    "id": "premium-pen-4",
+    "name": "Premium Pen 4",
+    "price": 35000,
+    "shortDesc": "Stylish gel pen with extra-fine point.",
+    "longDesc": "Premium Pen 4 uses an extra-fine gel tip designed for detailed writing, diagrams, and precision note-taking. Its comfortable grip makes it suitable for extended sessions.",
+    "image": "/data/premium-pen-4.jpeg",
+    "category": "pen",
+    "tags": ["Pen", "Fine Tip", "Gel Ink", "Precision", "Premium"],
+    "featured": false,
+    "stock": 9
+  },
+
+  {
+    "id": "premium-pencil-3",
+    "name": "Premium Pencil 3",
+    "price": 12000,
+    "shortDesc": "HB pencil ideal for school and technical notes.",
+    "longDesc": "Premium Pencil 3 provides a balanced HB graphite core, suitable for both writing and technical sketches. Easy to sharpen and built for consistent performance.",
+    "image": "/data/premium-pencil-3.jpeg",
+    "category": "pencil",
+    "tags": ["Pencil", "HB", "School", "Writing", "Premium"],
+    "featured": false,
+    "stock": 67
+  },
+
+  {
+    "id": "premium-pencil-4",
+    "name": "Premium Pencil 4",
+    "price": 21000,
+    "shortDesc": "2B drawing pencil designed for shading.",
+    "longDesc": "Premium Pencil 4 features a soft 2B graphite core ideal for art students, shading work, and expressive drawing. Its smooth texture allows rich tones with ease.",
+    "image": "/data/premium-pencil-4.jpeg",
+    "category": "pencil",
+    "tags": ["Pencil", "2B", "Shading", "Art", "Premium"],
+    "featured": false,
+    "stock": 14
+  },
+
+  {
+    "id": "premium-eraser-3",
+    "name": "Premium Eraser 3",
+    "price": 9000,
+    "shortDesc": "PVC-free eraser safe for sensitive paper.",
+    "longDesc": "Premium Eraser 3 is a PVC-free eraser formulated to erase cleanly without tearing delicate paper. Ideal for journals, planners, and archival-quality notebooks.",
+    "image": "/data/premium-eraser-3.jpeg",
+    "category": "eraser",
+    "tags": ["Eraser", "PVC-Free", "Soft", "Clean Erasing", "Premium"],
+    "featured": false,
+    "stock": 57
+  },
+
+  {
+    "id": "premium-eraser-4",
+    "name": "Premium Eraser 4",
+    "price": 15000,
+    "shortDesc": "Professional-grade kneaded eraser.",
+    "longDesc": "Premium Eraser 4 is a kneaded eraser commonly used in art and design. It molds to any shape, allowing precise lifting of graphite and charcoal without damaging the page.",
+    "image": "/data/premium-eraser-4.jpeg",
+    "category": "eraser",
+    "tags": ["Eraser", "Kneaded", "Art", "Sketching", "Professional"],
+    "featured": false,
+    "stock": 23
+  },
+
+  {
+    "id": "premium-ruler-3",
+    "name": "Premium Ruler 3",
+    "price": 18000,
+    "shortDesc": "Flexible plastic ruler for everyday use.",
+    "longDesc": "Premium Ruler 3 is lightweight, semi-flexible, and designed for safe everyday use. Its markings are fade-resistant and easy to read for school tasks.",
+    "image": "/data/premium-ruler-3.jpeg",
+    "category": "ruler",
+    "tags": ["Ruler", "Flexible", "Plastic", "School", "Premium"],
+    "featured": false,
+    "stock": 88
+  },
+
+  {
+    "id": "premium-ruler-4",
+    "name": "Premium Ruler 4",
+    "price": 26000,
+    "shortDesc": "Aluminum ruler with anti-slip grip.",
+    "longDesc": "Premium Ruler 4 is constructed with durable aluminum and includes anti-slip padding to ensure accuracy when drawing or cutting. A favorite for design and engineering students.",
+    "image": "/data/premium-ruler-4.jpeg",
+    "category": "ruler",
+    "tags": ["Ruler", "Aluminum", "Anti-Slip", "Design", "Engineering"],
+    "featured": false,
+    "stock": 34
+  }
+]

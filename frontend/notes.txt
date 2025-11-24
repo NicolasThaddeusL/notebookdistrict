@@ -1,0 +1,5 @@
+1. main.html and main.css are for the "main" page 
+2. about-us.html and about-us.css are for the "about us" page which will include a hero.
+3. products.json is the data for the JS to read.
+4. shop.html and shop.css are for the "shopping" page
+5. update-log are for the update logs.
